@@ -63,6 +63,18 @@
     <div id="status">
     </div>
     <div class="fb-like" data - share="true" data - width="450" data - show - faces="true"></div>
+    <div id="status">
+        <script>
+            function fbLogout() {
+                FB.logout(function(response) {
+                    window.location.reload();
+                });
+            }
+
+        </script>
+        <span id="fbLogout" onclick="fbLogout()"><a class="fb_button fb_button_medium"><span class="fb_button_text">Logout</span></a>
+        </span>
+    </div>
 </body>
 
 </html>
